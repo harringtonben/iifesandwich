@@ -1,6 +1,5 @@
 var SandwichBuilder = (function(oldSandwichBuilder) {
-	const cheeses = [{cheese: "American", price: 0.99},{ cheese: "Swiss", price: 1.99},{cheese: "Provolone", price: 1.99}, {cheese: "I can't eat cheese...it makes me poop", price: 0}];
-
+	const cheeses = [{ingredient: "American", price: 0.99},{ingredient: "Swiss", price: 1.99},{ingredient: "Provolone", price: 1.99}, {ingredient: "I can't eat cheese...it makes me poop", price: 0}];
 	oldSandwichBuilder.getCheeses = function() {
 		return cheeses;
 	};
