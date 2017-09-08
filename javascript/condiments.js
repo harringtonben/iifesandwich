@@ -1,6 +1,5 @@
 var SandwichBuilder = (function(oldSandwichBuilder) {
-	const condiments = [{condiment: "Mayo", price: 0.50},{condiment: "Mustard", price: 0.50},{condiment: "Hot Sauce", price: 0.50}, {condiment: "Oil and Vinegar", price: 1.00}, {condiment: "I don't need no stinkin' condiments!", price: 0}];
-	
+	const condiments = [{ingredient: "Mayo", price: 0.50},{ingredient: "Mustard", price: 0.50},{ingredient: "Hot Sauce", price: 0.50}, {ingredient: "Oil and Vinegar", price: 1.00}, {ingredient: "I don't need no stinkin' condiments!", price: 0}];
 	oldSandwichBuilder.getCondiments = function() {
 		return condiments;
 	};

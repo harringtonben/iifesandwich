@@ -1,6 +1,5 @@
 var SandwichBuilder = (function(oldSandwichBuilder) {
-	const breads = [{bread: "White Bread", price: 1.99},{ bread: "Wheat Bread", price: 1.99},{meat: "Garlic Bread", price: 2.99}, {meat: "Parmesean Bread", price: 2.99}];
-	
+	const breads = [{ingredient: "White Bread", price: 1.99},{ingredient: "Wheat Bread", price: 1.99},{ingredient: "Garlic Bread", price: 2.99}, {ingredient: "Parmesean Bread", price: 2.99}];
 	oldSandwichBuilder.getBreads = function() {
 		return breads;
 	};

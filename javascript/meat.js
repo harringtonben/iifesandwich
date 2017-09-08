@@ -1,6 +1,5 @@
 var SandwichBuilder = (function(oldSandwichBuilder) {
-	const meats = [{meat: "Turkey", price: 2.99},{ meat: "Ham", price: 2.99},{meat: "Roast Beef", price: 3.99}, 	{meat: "Tuna Salad", price: 2.99}, {meat:"I'm an L7 weenie and don't eat meat", price: 0}];
-	
+	const meats = [{ingredient: "Turkey", price: 2.99},{ingredient: "Ham", price: 2.99},{ingredient: "Roast Beef", price: 3.99}, {ingredient: "Tuna Salad", price: 2.99}, {ingredient:"I'm an L7 weenie and don't eat meat", price: 0}];
 	oldSandwichBuilder.getMeats = function() {
 		return meats;
 	};

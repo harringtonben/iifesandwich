@@ -1,6 +1,5 @@
 var SandwichBuilder = (function(oldSandwichBuilder) {
-	const veggies = [{veggie: "Lettuce", price: 0.50},{ veggie: "pickles", price: 0.50},{veggie: "Tomato", price: 0.50}, {veggie: "Onions", price: 0.50}, {veggie: "Veggies are for losers", price: 0}];
-	
+	const veggies = [{ingredient: "Lettuce", price: 0.50},{ingredient: "pickles", price: 0.50},{ingredient: "Tomato", price: 0.50}, {ingredient: "Onions", price: 0.50}, {ingredient: "Veggies are for losers", price: 0}];
 	oldSandwichBuilder.getVeggies = function() {
 		return veggies;
 	};
