@@ -1,6 +1,6 @@
 var SandwichBuilder = (function(oldSandwichBuilder) {
 	const meats = [{ingredient: "Turkey", price: 2.99},{ingredient: "Ham", price: 2.99},{ingredient: "Roast Beef", price: 3.99}, {ingredient: "Tuna Salad", price: 2.99}, {ingredient:"I'm an L7 weenie and don't eat meat", price: 0}];
-	const sandwichMeats = [];
+	let sandwichMeats = [];
 
 	oldSandwichBuilder.getMeats = function() {
 		return sandwichMeats;
@@ -19,6 +19,10 @@ var SandwichBuilder = (function(oldSandwichBuilder) {
 			sandwichMeats.push(meats[4])
 		}
 	};
+
+	oldSandwichBuilder.resetSandwichMeats = function() {
+		sandwichMeats = [];
+	}
 
 	return oldSandwichBuilder;
 })(SandwichBuilder || {});
