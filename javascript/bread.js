@@ -7,6 +7,7 @@ var SandwichBuilder = (function(oldSandwichBuilder) {
 	};
 
 	oldSandwichBuilder.addBreadToSandwich = function(event) {
+		console.log(event);
 		if (event.target.parentNode.childNodes[1].childNodes[3].checked === true) {
 			sandwichBreads.push(breads[0]);
 		} if (event.target.parentNode.childNodes[1].childNodes[7].checked === true) {

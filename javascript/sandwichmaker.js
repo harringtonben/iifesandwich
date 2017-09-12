@@ -9,7 +9,10 @@ submitSandwich.addEventListener("click", function(event) {
 	SandwichBuilder.buildMySandwich();
 });
 
-
+let clearSandwich = document.getElementById("clear");
+clearSandwich.addEventListener("click", function() {
+	SandwichBuilder.clearMySandwich();
+})
 
 
 

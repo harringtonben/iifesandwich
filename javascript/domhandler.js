@@ -35,5 +35,11 @@ var SandwichBuilder = (function(oldSandwichBuilder) {
 	document.getElementById("finalsandwich").innerHTML = sandwichStrang;
 }
 
+
+	oldSandwichBuilder.clearMySandwich = () => {
+		document.getElementById("finalsandwich").innerHTML = ``;
+		mySandwich = [];
+	}
+
 	return oldSandwichBuilder;
 })(SandwichBuilder || {});
