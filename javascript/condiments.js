@@ -1,6 +1,6 @@
 var SandwichBuilder = (function(oldSandwichBuilder) {
 	const condiments = [{ingredient: "Mayo", price: 0.50},{ingredient: "Mustard", price: 0.50},{ingredient: "Hot Sauce", price: 0.50}, {ingredient: "Oil and Vinegar", price: 1.00}, {ingredient: "I don't need no stinkin' condiments!", price: 0}];
-	const sandwichCondiments = [];
+	let sandwichCondiments = [];
 
 	oldSandwichBuilder.getCondiments = function() {
 		return sandwichCondiments;
@@ -17,6 +17,10 @@ var SandwichBuilder = (function(oldSandwichBuilder) {
 			sandwichCondiments.push(condiments[3]);
 		} 
 	};
+
+	oldSandwichBuilder.resetSandwichCondiments = function() {
+		sandwichCondiments = [];
+	}
 
 	return oldSandwichBuilder;
 })(SandwichBuilder || {});

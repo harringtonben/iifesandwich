@@ -1,6 +1,6 @@
 var SandwichBuilder = (function(oldSandwichBuilder) {
 	const breads = [{ingredient: "White Bread", price: 1.99},{ingredient: "Wheat Bread", price: 1.99},{ingredient: "Garlic Bread", price: 2.99}, {ingredient: "Parmesean Bread", price: 2.99}];
-	const sandwichBreads = [];
+	let sandwichBreads = [];
 	
 	oldSandwichBuilder.getBreads = function() {
 		return sandwichBreads;
@@ -18,6 +18,10 @@ var SandwichBuilder = (function(oldSandwichBuilder) {
 			sandwichBreads.push(breads[3]);
 		} 
 	};
+
+	oldSandwichBuilder.resetSandwichBreads = function() {
+		sandwichBreads = [];
+	}
 
 	return oldSandwichBuilder;
 })(SandwichBuilder || {});

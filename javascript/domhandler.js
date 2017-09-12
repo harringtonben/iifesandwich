@@ -10,7 +10,6 @@ var SandwichBuilder = (function(oldSandwichBuilder) {
 	
 
 	let sandwichBuild = mySandwich.concat(sammyBreads, sammyMeats, sammyCheeses, sammyVeggies, sammyCondiments);
-	// console.log("my sandwich", sandwichBuild);
 	SandwichBuilder.makeMySandwich(sandwichBuild);
 }
 
@@ -19,7 +18,6 @@ var SandwichBuilder = (function(oldSandwichBuilder) {
 	let sandwichStrang = `<h1>Here is your order</h1>`;
 	let sandwichFinalPrice = 0;
 	for (let i=0; i<sandwich.length; i++) {
-		// debugger;
 		sandwichFinalPrice += sandwich[i].price;
 	}
 
@@ -39,7 +37,6 @@ var SandwichBuilder = (function(oldSandwichBuilder) {
 	oldSandwichBuilder.clearMySandwich = () => {
 		document.getElementById("finalsandwich").innerHTML = ``;
 		mySandwich = [];
-		console.log(mySandwich);
 	}
 
 	return oldSandwichBuilder;
