@@ -39,6 +39,7 @@ var SandwichBuilder = (function(oldSandwichBuilder) {
 	oldSandwichBuilder.clearMySandwich = () => {
 		document.getElementById("finalsandwich").innerHTML = ``;
 		mySandwich = [];
+		console.log(mySandwich);
 	}
 
 	return oldSandwichBuilder;
